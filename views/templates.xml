@@ -1,0 +1,99 @@
+
+
+<odoo>
+    <data>
+        <record id="xxtemplate_header" model="ir.ui.view">
+            <field name="name">yytemplate_header_default</field>
+            <field name="inherit_id" ref="website_sale.template_header_default" />
+            <field name="arch" type="xml">
+                <xpath expr="//t[@t-foreach='website.menu_id.child_id']" position="after">
+                    <p>YY template_header_default_after2</p>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+
+<!-- FUNCIONO -->
+<!--
+<odoo>
+    <data>
+        <record id="xxtemplate_header" model="ir.ui.view">
+            <field name="name">xxtemplate_header_default</field>
+            <field name="inherit_id" ref="website_sale.template_header_default" />
+            <field name="arch" type="xml">
+                <xpath expr="//t[@t-foreach='website.menu_id.child_id']" position="before">
+                    <p>XX template_header_default_before</p>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+-->
+
+
+
+<!-- FUNCIONO -->
+<!--
+<odoo>
+    <data>
+        <record id="xxdefault_template_header" model="ir.ui.view">
+            <field name="name">xxtempalte_header</field>
+            <field name="inherit_id" ref="website.template_header_default" />
+            <field name="arch" type="xml">
+                <xpath expr="//header//nav" position="replace">
+                    <p>XX HEADER DEF</p>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+-->
+
+
+<!-- NO FUNCIONO -->
+<!--
+<odoo>
+    <data>
+        <record id="xxheader_brand_logo" model="ir.ui.view">
+            <field name="name">xxbrand_logo</field>
+            <field name="inherit_id" ref="website.option_header_brand_logo" />
+            <field name="arch" type="xml">
+                <xpath expr="//*[@id='o_fake_navbar_brand']" position="replace">
+                    <p>XX BRAND LOGO</p>  
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+-->
+
+
+<!-- FUNCIONO -->
+<!--
+<odoo>
+    <data>
+        <record id="xxmoldeo_custom_footer" model="ir.ui.view">
+            <field name="name">xxmoldeo_pie</field>
+            <field name="inherit_id" ref="website.footer_custom" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='footer']" position="replace">
+                    <p>XX MOLDEO PIE</p>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+-->
+
+
+<!--
+<odoo>
+    <template id="external_layout_inherited" inherit_id="web.external_layout">
+        <xpath expr="//div[hasclass('header')]" position="replace">
+        </xpath>
+    </template>
+</odoo>
+-->

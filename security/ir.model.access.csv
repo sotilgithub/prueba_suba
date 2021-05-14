@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_basico_generado8_basico_generado8,basico_generado8.basico_generado8,model_basico_generado8_basico_generado8,base.group_user,1,1,1,1
