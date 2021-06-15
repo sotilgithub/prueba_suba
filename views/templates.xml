@@ -3,11 +3,11 @@
 <odoo>
     <data>
         <record id="xxtemplate_header" model="ir.ui.view">
-            <field name="name">yytemplate_header_default</field>
+            <field name="name">xxtemplate_header_default</field>
             <field name="inherit_id" ref="website_sale.template_header_default" />
             <field name="arch" type="xml">
                 <xpath expr="//t[@t-foreach='website.menu_id.child_id']" position="after">
-                    <p>YY template_header_default_after2</p>
+                    <p>XX template_header_default_after2</p>
                 </xpath>
             </field>
         </record>
